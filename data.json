@@ -1,0 +1,52 @@
+{
+  "studentMarks": [
+    {
+      "name": "dio",
+      "physics": 88,
+      "chemistry": 82,
+      "biology": 75,
+      "maths": 91,
+      "english": 79
+    },
+    {
+      "name": "jojo",
+      "physics": 76,
+      "chemistry": 85,
+      "biology": 89,
+      "maths": 72,
+      "english": 90
+    },
+    {
+      "name": "gojo",
+      "physics": 95,
+      "chemistry": 90,
+      "biology": 84,
+      "maths": 99,
+      "english": 88
+    },
+    {
+      "name": "mojojojo",
+      "physics": 67,
+      "chemistry": 73,
+      "biology": 81,
+      "maths": 70,
+      "english": 76
+    },
+    {
+      "name": "goku",
+      "physics": 100,
+      "chemistry": 92,
+      "biology": 80,
+      "maths": 98,
+      "english": 74
+    },
+    {
+      "name": "vegeta",
+      "physics": 97,
+      "chemistry": 89,
+      "biology": 78,
+      "maths": 96,
+      "english": 83
+    }
+  ]
+}
