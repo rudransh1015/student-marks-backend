@@ -1,1 +1,1 @@
-simlpe bigginer project for understanding server creation adn js fundamnetal .
+simlpe bigginner project for understanding server creation and js fundamnetal .
