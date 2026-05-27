@@ -1,0 +1,52 @@
+=============================
+     STUDENT MARKS SERVER
+=============================
+
+Available Routes:
+
+/marks/:student → Show complete student data
+
+Example:
+http://localhost:8000/marks/dio
+
+/totalmarks/:student → Show total marks
+
+
+Example:
+http://localhost:8000/totalmarks/dio
+
+
+/avgmarks/:student → Show average marks
+
+
+Example:
+http://localhost:8000/avgmarks/dio
+
+
+/percentage/:student → Show percentage
+
+
+Example:
+http://localhost:8000/percentage/dio
+
+
+/highestlowestmarks/:student → Show highest and lowest scoring subjects
+
+
+Example:
+http://localhost:8000/highestlowestmarks/dio
+
+
+Available Students:
+
+dio
+jojo
+gojo
+mojojojo
+goku
+vegeta
+
+
+=============================
+Server Running...
+=============================

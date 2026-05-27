@@ -28,7 +28,7 @@ function Marks(studentName) {
 // function to get totalmarks of the student 
 function TotalMarks(studentName) {
 
-    data.studentMarks.forEach(function(student) {
+    let student = data.studentMarks.find(s => s.name === studentName)
 
         if (student.name === studentName) {
 
@@ -43,12 +43,14 @@ function TotalMarks(studentName) {
             }
 
             console.log(`Total Marks: ${total}`);
-            return total;
+            return JSON.stringify(total)
+            
         }
+      
+        
 
-    });
-
-}
+    };
+    
 
 // function to get the highest and lowest scoring subject
 function HighestLowestMarks(studentName) {
@@ -56,7 +58,8 @@ function HighestLowestMarks(studentName) {
     let found = false;
     let result = null;
 
-    data.studentMarks.forEach(function(student) {
+    let student = data.studentMarks.find(s => s.name === studentName)
+   
 
         if (student.name === studentName) {
 
@@ -102,28 +105,28 @@ function HighestLowestMarks(studentName) {
             };
 
         }
+        
+      if (!found) {
 
-    });
+         console.log(`student named ${studentName} not found`);
 
-    if (!found) {
+               return null;}
 
-        console.log(`student named ${studentName} not found`);
+    
 
-        return null;
+    return result; 
 
-    }
+    };
 
-    return result;
-
-}
 
 // function to get avgMarks of the student 
 function AverageMarks(studentName) {
 
     let found = false;
+    console.log(studentName)
 
-    data.studentMarks.forEach(function(student) {
-
+    let student = data.studentMarks.find(s => s.name === studentName)
+              
         if (student.name === studentName) {
 
             found = true;
@@ -148,11 +151,11 @@ function AverageMarks(studentName) {
                 `${studentName}'s average marks = ${average}`
             );
 
-            return average;
-
+ return average;
         }
+       
+            
 
-    });
 
     if (!found) {
         console.log(`student named ${studentName} not found`);
@@ -166,7 +169,8 @@ function Percentage(studentName) {
 
     let found = false;
 
-    data.studentMarks.forEach(function(student) {
+    let student = data.studentMarks.find(s => s.name === studentName)
+    
 
         if (student.name === studentName) {
 
@@ -199,15 +203,26 @@ function Percentage(studentName) {
 
         }
 
-    });
-
-    if (!found) {
+     if (!found) {
 
         console.log(`student named ${studentName} not found`);
 
         return null;
 
-    }
+     }
 
+        
+    };
+
+   
+
+
+module.exports = { 
+                    Marks,
+                    TotalMarks,
+                    HighestLowestMarks,
+                    AverageMarks,
+                    Percentage
 }
 
+console.log(Array.isArray( data.studentMarks))
